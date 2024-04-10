@@ -1,0 +1,74 @@
+:root {
+  --background-dark: #000;
+  --text-white: #fff;
+
+  --background-white: #fff;
+  --text-dark: #000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 100%;
+}
+.header {
+  position: fixed;
+  color: aliceblue;
+  background-color: darkblue;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
+}
+.logo a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.right-header {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-about {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background-color: aliceblue;
+  color: darkblue;
+}
+.container.light {
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  padding-top: 80px;
+  width: 100%;
+  background-color: var(--background-white);
+  color: var(--text-dark);
+}
+.container.dark {
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  padding-top: 80px;
+  width: 100%;
+  background-color: var(--background-dark);
+  color: var(--text-white);
+}
+.container-child {
+  padding: 20px 200px;
+}
+
+.container-child section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  padding: 20px;
+  width: 800px;
+  object-fit: cover;
+}
